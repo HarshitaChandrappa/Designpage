@@ -11,8 +11,18 @@ body {margin: 4x;}
 .header{
 padding: 4rem;
 text-align: center;
-background: skyblue;
-color: white;
+background: rgb(102, 216, 57);
+color: rgba(184, 212, 196, 0.897);
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    background: rgb(63, 167, 228);
+    color:#fff;
+    padding:.4rem 1.5rem;
+    cursor: pointer;
+    font-size: 1rem;
 }
 .navbar {
 overflow: hidden;
@@ -31,8 +41,37 @@ float: right;
 .main {
 flex: 80%;
 background-color: white;
-padding: 20px;
+padding: 2rem;
 }
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+.box-container .box{
+    flex:1 1 3rem;
+    border-radius: .5rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    position: relative;    
+}
+.box-container .box .image{
+    position: relative;
+    text-align: center;
+    padding-top: 2rem;
+    overflow:hidden;
+}
+.box-container .box .image img{
+    height:20rem;
+}
+.box-container .box .content{
+    padding:2rem;
+    text-align: center;
+}
+.box-container .box .content h3{
+    font-size: 1rem;
+    color:#333;
+}
+
 </style>
 </head>
 
@@ -45,10 +84,10 @@ padding: 20px;
 <a href="">
 <label for="cars">Services:</label>
 <select id="Services" name="Services">
-    <option value="a">1</option>
-    <option value="b">2</option>
-    <option value="c">3</option>
-    <option value="d">4</option>
+    <option value="a"></option>
+    <option value="b"></option>
+    <option value="c"></option>
+    <option value="d"></option>
   </select></a>
 <div class="search-bar">
   <input type="search" id="search" name="search">
@@ -58,7 +97,7 @@ padding: 20px;
 <div class="header">
 <h1>Dramatically Engage</h1>
 <p>Objectively innovate empowered manufatured products whereas parallel platforms</p>
-<center> <input type="submit" value="Engage Now" /> </center>
+<center><a href="#" class="btn">Engage Now</a></center>
 </div>
 
 <div class="main">
@@ -67,12 +106,37 @@ padding: 20px;
 <p>Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea sharing.</p>
 <br>
 </center>
-<center>
-<p>
-<a href="CheckOut.html"><img src="BgImg1.jpg"  height="250" width="250" /></a>
-<a href="CheckOut.html"><img src="BgImg1.jpg"  height="250" width="250" /></a>
-<a href="CheckOut.html"><img src="BgImg1.jpg"  height="250" width="250" /></a>
-</p></center>
 </div>
+<div class="box-container">
+  <div class="box">
+      <div class="image">
+          <img src="img-1.jpg" alt="">
+      </div>
+      <div class="content">
+          <h3>Efficiently Unleash</h3>
+          <p>Collaboratively administrate empowered markets via plug-and-play nectworks.</p>
+      </div>
+  </div>
+
+  <div class="box">
+      <div class="image">
+          <img src="img-2.jpg" alt="">
+      </div>
+      <div class="content">
+          <h3>Completely Synergize</h3>
+          <p>Dramatically maintain clicks-and-mortar solutions without functions solutions.</p>
+      </div>
+  </div>
+
+  <div class="box">
+      <div class="image">
+          <img src="img-3.jpg" alt="">
+      </div>
+      <div class="content">
+          <h3>Dynamically Procrastinate</h3>
+          <p>Professionally cultivate one-to-one customer service with robust ideas.</p>
+      </div>
+  </div>            
 </div>
+
 </body></html>
