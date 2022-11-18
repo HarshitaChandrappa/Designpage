@@ -36,7 +36,9 @@ text-align: center;
 padding: 10px 10px;
 }
 .navbar .search-bar {
-float: right;
+    margin-top: 10px;
+    float: right;
+    margin-right: 10px;
 }
 .main {
 flex: 80%;
@@ -72,6 +74,57 @@ padding: 2rem;
     color:#333;
 }
 
+/* media queries  */
+@media (max-width:991px){
+    
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding:2rem;
+    }
+
+    .main{
+        background-position: left;
+    }
+
+}
+
+@media (max-width:768px){
+
+    header .navbar{
+        position:absolute;
+        top:100%; left:0; right:0;
+        background:#eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header .navbar a{
+        margin:1.5rem;
+        padding:1.5rem;
+        background:#fff;
+        border:.1rem solid rgba(0,0,0,.1);
+        display: block;
+    }
+
+    .main .content h3{
+        font-size: 5rem;
+    }
+    
+}
+
+@media (max-width:450px){ 
+
+    html{
+        font-size: 50%;
+    }
+    .header{
+        font-size: 3rem;
+    }
+
+}
 </style>
 </head>
 
@@ -104,13 +157,12 @@ padding: 2rem;
 <center>
 <h2>SUPERIOR COLLABORATION</h2>
 <p>Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea sharing.</p>
-<br>
 </center>
 </div>
 <div class="box-container">
   <div class="box">
       <div class="image">
-          <img src="img-1.jpg" alt="">
+          <img src="images\img-1.jpg" alt="">
       </div>
       <div class="content">
           <h3>Efficiently Unleash</h3>
@@ -120,7 +172,7 @@ padding: 2rem;
 
   <div class="box">
       <div class="image">
-          <img src="img-2.jpg" alt="">
+          <img src="images\img-2.jpg" alt="">
       </div>
       <div class="content">
           <h3>Completely Synergize</h3>
@@ -130,7 +182,7 @@ padding: 2rem;
 
   <div class="box">
       <div class="image">
-          <img src="img-3.jpg" alt="">
+          <img src="images\img-3.jpg" alt="">
       </div>
       <div class="content">
           <h3>Dynamically Procrastinate</h3>
